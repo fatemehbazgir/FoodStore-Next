@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import DetailsPage from '../../components/templates/DetailsPage';
 
 function Details({ data }) {
     const router = useRouter();
@@ -8,7 +9,7 @@ function Details({ data }) {
         return <h2>Loading Page...</h2>
     }
     return (
-        <div>Details</div>
+        <DetailsPage  {...data} />
     )
 }
 
